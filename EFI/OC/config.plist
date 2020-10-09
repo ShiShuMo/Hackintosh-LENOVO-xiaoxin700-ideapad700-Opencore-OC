@@ -340,6 +340,8 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
+			<key>EnableForAll</key>
+			<false/>
 			<key>FadtEnableReset</key>
 			<false/>
 			<key>NormalizeHeaders</key>
@@ -367,6 +369,8 @@
 			<key>DisableVariableWrite</key>
 			<false/>
 			<key>DiscardHibernateMap</key>
+			<false/>
+			<key>EnableForAll</key>
 			<false/>
 			<key>EnableSafeModeSlide</key>
 			<true/>
@@ -440,7 +444,7 @@
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>AAAA/w==</data>
+				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -507,7 +511,7 @@
 				<key>device_type</key>
 				<string>Network controller</string>
 				<key>model</key>
-				<string>Wi-Fi 6 AX200</string>
+				<string>Wi-Fi</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x5)</key>
 			<dict>
@@ -1153,6 +1157,12 @@
 			<data></data>
 			<key>Cpuid1Mask</key>
 			<data></data>
+			<key>DummyPowerManagement</key>
+			<false/>
+			<key>MaxKernel</key>
+			<string></string>
+			<key>MinKernel</key>
+			<string></string>
 		</dict>
 		<key>Force</key>
 		<array/>
@@ -1176,13 +1186,15 @@
 			<true/>
 			<key>DisableRtcChecksum</key>
 			<false/>
-			<key>DummyPowerManagement</key>
+			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
+			<false/>
+			<key>LegacyCommpage</key>
 			<false/>
 			<key>PanicNoKextDump</key>
 			<true/>
@@ -1208,6 +1220,7 @@
 		<key>BlessOverride</key>
 		<array>
 			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
+			<string>\EFI\ubuntu\shimx64.efi</string>
 		</array>
 		<key>Boot</key>
 		<dict>
@@ -1226,6 +1239,8 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
+			<true/>
+			<key>SkipCustomEntryCheck</key>
 			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
@@ -1261,11 +1276,25 @@
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Name</key>
 				<string>Windows 10</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,8B-F8-86-49-8B-44-1B-00)/HD(1,GPT,82B26EE4-5C1B-449F-AE0B-77823FBECD2F,0x800,0x96000) /\EFI\Microsoft\Boot\bootmgfw.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Ubuntu 20.04</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,8B-F8-86-49-8B-44-1B-00)/HD(1,GPT,82B26EE4-5C1B-449F-AE0B-77823FBECD2F,0x800,0x96000) /\EFI\ubuntu\shimx64.efi</string>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -1295,7 +1324,7 @@
 			<key>SecureBootModel</key>
 			<string>Disabled</string>
 			<key>ScanPolicy</key>
-			<integer>0</integer>
+			<integer>3087107</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1394,7 +1423,7 @@
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
-		<true/>
+		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -1435,19 +1464,21 @@
 			<key>AdviseWindows</key>
 			<true/>
 			<key>MLB</key>
-			<string>C02711130GUHCF9UE</string>
+			<string>C02743600J9HCF9A8</string>
 			<key>ProcessorType</key>
 			<integer>1793</integer>
+			<key>SystemMemoryStatus</key>
+			<string>Auto</string>
 			<key>ROM</key>
-			<data>y90Lb/TY</data>
+			<data>2Vbh7quv</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro13,3</string>
 			<key>SystemSerialNumber</key>
-			<string>C02TF0Z0GTFN</string>
+			<string>C02VLLZ1GTFN</string>
 			<key>SystemUUID</key>
-			<string>E52A2BDB-B0AD-48C6-9F57-9F09018EAA2B</string>
+			<string>006D5778-0699-48D0-BD29-511BE11B893B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
