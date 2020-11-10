@@ -1,6 +1,6 @@
 ## Hackintosh-LENOVO-xiaoxin700-ideapad700-Opencore-OC
 
-- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.2 Mod 开发版，支持 10.15和BigSur beta8 全新安装以及 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 itlwm.kext,内含airportitlwm.kext(BigSur版)全固件版本的，使用 itlwm.kext 请下载HeliPort，具体如何使用请参考互联网。
+- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.3 Mod 开发版，支持 10.15和Big Sur最新版全新安装以及 无损 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 airportitlwm.kext(BigSur版),内含itlwm.kext全固件版本的，使用itlwm.kext 的用户 请下载HeliPort，具体如何使用请参考互联网。
   
 ## 电脑配置
 
