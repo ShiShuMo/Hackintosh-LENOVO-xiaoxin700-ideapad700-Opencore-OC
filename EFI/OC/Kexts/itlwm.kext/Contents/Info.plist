@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H2</string>
+	<string>19H15</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -63,23 +63,23 @@
 				<key>WiFi_1</key>
 				<dict>
 					<key>password</key>
-					<string>15073481238</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
-					<string>@PHICOMM_03</string>
+					<string>ssdt</string>
 				</dict>
 				<key>WiFi_2</key>
 				<dict>
 					<key>password</key>
-					<string>591031664</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
-					<string>梦</string>
+					<string>ssdt_5G</string>
 				</dict>
 				<key>WiFi_3</key>
 				<dict>
 					<key>password</key>
-					<string>15073481238</string>
+					<string></string>
 					<key>ssid</key>
-					<string>@PHICOMM_03_5G</string>
+					<string>Redmi</string>
 				</dict>
 				<key>WiFi_4</key>
 				<dict>
