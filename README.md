@@ -1,6 +1,12 @@
 ## Hackintosh-LENOVO-xiaoxin700-ideapad700-Opencore-OC
 
-- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.6 Mod 开发版，支持 10.15和Big Sur最新版全新安装以及 无损 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 airportitlwm.kext(BigSur版)，本人使用BigSur 11.1版本,内含itlwm.kext全固件版本的，使用itlwm.kext 的用户 请下载HeliPort，具体如何使用请参考互联网。
+- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.6 Mod 开发版，支持 10.15和Big Sur最新版全新安装以及 无损 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 airportitlwm.kext(BigSur版)，本人使用BigSur 11.1版本，具体如何使用请参考互联网。
+
+- 增加另外三个配置文件如下：
+  config(brcm_appleps2)：使用博通网卡及蓝牙驱动，使用ApplePS2SmartTouchPad键盘及触摸板驱动。
+  config(brcm_voodps2)：用博通网卡及蓝牙驱动，使用VoodooPS2Controller键盘及触摸板驱动，具有原生按键调节亮度功能。
+  config(intel_appleps2)：使用intel网卡及蓝牙驱动，使用ApplePS2SmartTouchPad键盘及触摸板驱动。
+  默认配置为使用intel网卡及蓝牙驱动，使用VoodooPS2Controller键盘及触摸板驱动，具有原生按键调节亮度功能。
   
 ## 电脑配置
 
@@ -31,9 +37,8 @@
 
 ## 鸣谢
 
-- 感谢 [Acidanthera](https://github.com/acidanthera) 提供 [AppleALC](https://github.com/acidanthera/AppleALC)，[AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg)，[HibernationFixup](https://github.com/acidanthera/HibernationFixup)，[Lilu](https://github.com/acidanthera/Lilu)，[NVMeFix](https://github.com/acidanthera/NVMeFix)，[OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)，[VirtualSMC](https://github.com/acidanthera/VirtualSMC)，[VoodooInput](https://github.com/acidanthera/VoodooInput)，[VoodooPS2](https://github.com/acidanthera/VoodooPS2) 和 [WhateverGreen](https://github.com/acidanthera/WhateverGreen)。
-- 感谢 [apianti](https://sourceforge.net/u/apianti)，[blackosx](https://sourceforge.net/u/blackosx)，[blusseau](https://sourceforge.net/u/blusseau)，[dmazar](https://sourceforge.net/u/dmazar) 和 [slice2009](https://sourceforge.net/u/slice2009) 提供 [Clover](https://github.com/CloverHackyColor/CloverBootloader)。
+- 感谢 [Acidanthera](https://github.com/acidanthera) 提供 [AppleALC](https://github.com/acidanthera/AppleALC)，[HibernationFixup](https://github.com/acidanthera/HibernationFixup)，[Lilu](https://github.com/acidanthera/Lilu)，[NVMeFix](https://github.com/acidanthera/NVMeFix)，[OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)，[VirtualSMC](https://github.com/acidanthera/VirtualSMC)，[VoodooPS2](https://github.com/acidanthera/VoodooPS2) 和 [WhateverGreen](https://github.com/acidanthera/WhateverGreen)，[AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)，[BrcmBluetoothInjector](https://github.com/acidanthera/BrcmBluetoothInjector)，[BrightnessKeys](https://github.com/acidanthera/BrightnessKeys)，[CPUFriend](https://github.com/acidanthera/CPUFriend)，[RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup)。
 - 感谢 [daliansky](https://github.com/daliansky) 提供 [OC-little](https://github.com/daliansky/OC-little)。
-- 感谢 [FallenChromium](https://github.com/FallenChromium)，[jackxuechen](https://github.com/jackxuechen)，[Javmain](https://github.com/javmain)，[johnnync13](https://github.com/johnnync13)，[Menchen](https://github.com/Menchen)，[Pasi-Studio](https://github.com/Pasi-Studio)，[qeeqez](https://github.com/qeeqez) 和 [Bat.bat](https://github.com/williambj1) 的宝贵建议。
-- 感谢 [OpenIntelWireless](https://github.com/OpenIntelWireless) 提供 [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)。
-- 感谢 [RehabMan](https://github.com/RehabMan) 提供 [EAPD-Codec-Commander](https://github.com/RehabMan/EAPD-Codec-Commander)，[EFICheckDisabler](https://github.com/RehabMan/hack-tools/tree/master/kexts/EFICheckDisabler.kext)，[OS-X-Clover-Laptop-Config](https://github.com/RehabMan/OS-X-Clover-Laptop-Config)，[OS-X-Null-Ethernet](https://github.com/RehabMan/OS-X-Null-Ethernet) 和 [SATA-unsupported](https://github.com/RehabMan/hack-tools/tree/master/kexts/SATA-unsupported.kext)。
+- 感谢 [OpenIntelWireless](https://github.com/OpenIntelWireless) 提供 [IntelBluetoothFirmware](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)，[AirportItlwm](https://github.com/OpenIntelWireless/itlwm)。
+- 感谢 [Mieze](https://github.com/Mieze) 提供 [RTL8111_driver_for_OS_X](https://github.com/Mieze/RTL8111_driver_for_OS_X)。
+- 感谢互联网Hackintosh大佬提供一系列补丁文件。
