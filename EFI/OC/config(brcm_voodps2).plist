@@ -561,7 +561,7 @@
 				<key>model</key>
 				<string>100 Series/C230 Series Chipset Family SMBus</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key># PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key># AAPL00,override-no-connect</key>
 				<data>AP///////wAJ5XycAAAAAAEZAQSVIhNgAm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBPDeA3nA4FEAwIDYAWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjE1NkZITS1ONDIKAOM=</data>
@@ -580,6 +580,47 @@
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-index</key>
+				<data>/////w==</data>
+				<key>framebuffer-con2-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel HD Graphics 530</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAbGQ==</data>
+				<key>device-id</key>
+				<data>GxkAAA==</data>
+				<key>device_type</key>
+				<string>HDMI compatible controller</string>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
@@ -1190,8 +1231,8 @@
 	<dict>
 		<key>BlessOverride</key>
 		<array>
-			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			<string># \EFI\ubuntu\shimx64.efi</string>
+			<string>\EFI\Microsoft\Boot\bootmgfw.efi</string>
 		</array>
 		<key>Boot</key>
 		<dict>
@@ -1584,7 +1625,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-igfxonln=1 -agdpmod=ignore -igfxfw=2 -darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon brcmfx-driver=2 -brcmfxbeta</string>
+				<string>darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon igfxonln=1 brcmfx-driver=2 -brcmfxbeta</string>
 				<key>csr-active-config</key>
 				<data>dwAAAA==</data>
 				<key>prev-lang:kbd</key>

@@ -561,14 +561,14 @@
 				<key>model</key>
 				<string>100 Series/C230 Series Chipset Family SMBus</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key># PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key># AAPL00,override-no-connect</key>
+				<data>AP///////wAJ5XycAAAAAAEZAQSVIhNgAm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBPDeA3nA4FEAwIDYAWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjE1NkZITS1ONDIKAOM=</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAbGQ==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
-				<key># AAPL00,override-no-connect</key>
-				<data>AP///////wAJ5XycAAAAAAEZAQSVIhNgAm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBPDeA3nA4FEAwIDYAWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjE1NkZITS1ONDIKAOM=</data>
 				<key>device-id</key>
 				<data>GxkAAA==</data>
 				<key>device_type</key>
@@ -609,6 +609,47 @@
 				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel HD Graphics 530</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAAbGQ==</data>
+				<key>framebuffer-con2-preferred-lspcon-mode</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel HD Graphics 530</string>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-con2-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
+				<key>device-id</key>
+				<data>GxkAAA==</data>
+				<key>framebuffer-con2-index</key>
+				<data>/////w==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>device_type</key>
+				<string>HDMI compatible controller</string>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1566,7 +1607,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-igfxonln=1 -agdpmod=ignore -igfxfw=2 -darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon</string>
+				<string>darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>dwAAAA==</data>
 				<key>prev-lang:kbd</key>

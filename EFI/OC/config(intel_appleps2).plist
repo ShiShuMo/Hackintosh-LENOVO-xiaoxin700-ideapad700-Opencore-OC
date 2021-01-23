@@ -561,7 +561,7 @@
 				<key>model</key>
 				<string>100 Series/C230 Series Chipset Family SMBus</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<key># PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key># AAPL00,override-no-connect</key>
 				<data>AP///////wAJ5XycAAAAAAEZAQSVIhNgAm+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBPDeA3nA4FEAwIDYAWMIQAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjE1NkZITS1ONDIKAOM=</data>
@@ -1512,7 +1512,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-igfxonln=1 -agdpmod=ignore -igfxfw=2 -darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon</string>
+				<string>darkwake=0 -cdfon -igfxhdmidivs -igfxlspcon igfxonln=1</string>
 				<key>csr-active-config</key>
 				<data>dwAAAA==</data>
 				<key>prev-lang:kbd</key>
