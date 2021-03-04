@@ -33,7 +33,6 @@
 - 变频(i5-6300HQ）ssdt定制(0.6GHZ~3.1GHZ) ok 声卡 ok 自动切换音响耳机。
 - 机型 macbookpro 13,3 (2016)。
 - 电源 4项。
-- 暂未发现其他 Bugs,欢迎提交 issues。
 
 ## 鸣谢
 
