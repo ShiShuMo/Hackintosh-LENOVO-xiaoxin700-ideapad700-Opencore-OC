@@ -1,6 +1,6 @@
 ## Hackintosh-LENOVO-xiaoxin700-ideapad700-Opencore-OC
 
-- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.6 Mod 开发版，支持 10.15和Big Sur最新版全新安装以及 无损 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 airportitlwm.kext(BigSur版)，本人使用BigSur 11.1版本，具体如何使用请参考互联网。
+- 联想小新 700 （i5-6300HQ）黑苹果 Opencore 引导，使用 Opencore 0.6.7 Mod 开发版，支持 10.15和Big Sur最新版全新安装以及 无损 OTA 升级，几乎完美，加入了最新的 intel 网卡驱动，默认使用 airportitlwm.kext(BigSur版)，本人使用BigSur 11.1版本，具体如何使用请参考互联网。
 
 - 增加另外三个配置文件如下：
   config(brcm_appleps2)：使用博通网卡及蓝牙驱动，使用ApplePS2SmartTouchPad键盘及触摸板驱动。
